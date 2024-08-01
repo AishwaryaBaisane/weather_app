@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:glass/glass.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/Modal/Weather_modal.dart';
 import 'package:weather_app/Provider/Weather_provider.dart';
@@ -23,8 +24,8 @@ class FavScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-          backgroundColor: Color(0xff32255a),
-        // backgroundColor: Colors.white,
+          backgroundColor: Colors.black12,
+          // backgroundColor: Colors.white,
           body: FutureBuilder(
             future: Provider.of<WeatherProvider>(context).SearchWeather(
               weatherProviderTrue.search,
@@ -32,63 +33,74 @@ class FavScreen extends StatelessWidget {
             builder: (context, snapshot) {
               WeatherModal? weatherModal = snapshot.data;
               if (snapshot.hasData) {
-                return Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                      ...List.generate(
-                        weatherProviderTrue.weather.length,
-                        (index) => Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            height: 120,
-                            width: 380,
-                            decoration: BoxDecoration(
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.6),
-                                  blurRadius: 2,
-                                  spreadRadius: 1,
-                                  offset: Offset(0, 5),
-                                ),
-                              ],
-                              color: Color(0xff3C2E6C),
-                            ),
-                            child: Center(
-                              child: ListTile(
-                                  title: Text(
-                                    '${weatherProviderTrue.weather[index]}',
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w500),
-                                  ),
-                                  subtitle: Text(
-                                    '${weatherProviderTrue.weather2[index]}',
-                                    style: TextStyle(
-                                        fontSize: 25,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w400),
-                                  ),
-                                  trailing: Column(
-                                    children: [
-                                      Text(
-                                        '${weatherProviderTrue.weather1[index]}°c',
+                return Container(
+                  height: double.infinity,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      opacity: 0.9,
+                      image: AssetImage('assets/img/img9.gif'),
+                      fit: BoxFit.cover,
+                    ),
+                    // color: Colors.white
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Column(
+                      children: [
+                        ...List.generate(
+                          weatherProviderTrue.weather.length,
+                          (index) => Padding(
+                              padding: const EdgeInsets.all(7),
+                              child: Container(
+                                height: 120,
+                                width: 380,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.white24),
+                                child: Center(
+                                  child: ListTile(
+                                      leading: Image.network(
+                                          'http:${weatherProviderTrue.weather3[index]}'),
+                                      title: Text(
+                                        '${weatherProviderTrue.weather[index]}',
                                         style: TextStyle(
-                                            fontSize: 30,
+                                            fontSize: 28,
                                             color: Colors.white,
-                                            fontWeight: FontWeight.w600,),
+                                            fontWeight: FontWeight.w700),
                                       ),
-                                    ],
-                                  )
+                                      subtitle: Text(
+                                        '${weatherProviderTrue.weather2[index]}',
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w400),
+                                      ),
+                                      trailing: Column(
+                                        children: [
+                                          Text(
+                                            '${weatherProviderTrue.weather1[index]}°c',
+                                            style: TextStyle(
+                                              fontSize: 25,
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                          ),
+                                        ],
+                                      )
 
-                                  //
-                                  ),
-                            ),
-                          ),
+                                      //
+                                      ),
+                                ),
+                              )),
+                          // .asGlass(
+                          //                               blurX: 3,
+                          //                               blurY: 3,
+                          //  glassmorfism kit
+                          //   glass kit
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 );
               } else if (snapshot.hasError) {

@@ -10,8 +10,8 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Timer(
-      Duration(seconds: 2),
-          () {
+      Duration(seconds: 6),
+      () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
             builder: (context) => FirstScreen(),
@@ -24,10 +24,11 @@ class SplashPage extends StatelessWidget {
         height: double.infinity,
         width: double.infinity,
         decoration: BoxDecoration(
-          image:DecorationImage(
-            image: AssetImage('assets/img/sp2.png'),fit: BoxFit.cover
-          )
-        ),
+            image: DecorationImage(
+                image: AssetImage(
+                  'assets/img/cute.gif',
+                ),
+                fit: BoxFit.fitWidth)),
       ),
     );
   }

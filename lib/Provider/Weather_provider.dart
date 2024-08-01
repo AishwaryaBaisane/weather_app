@@ -10,6 +10,7 @@ class WeatherProvider extends ChangeNotifier {
   List<String> weather = [];
   List<double> weather1 = [];
   List<String> weather2 = [];
+  List<String> weather3 = [];
   List SearchList = [];
 
   void ImgFind(String img) {
@@ -44,6 +45,13 @@ class WeatherProvider extends ChangeNotifier {
     String data = temp;
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     weather2.add(data);
+    sharedPreferences.setStringList('weather', weather);
+  }
+  Future<void> addFavourite4(String icon)
+  async {
+    String data = "http:$icon";
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    weather3.add(data);
     sharedPreferences.setStringList('weather', weather);
   }
 
