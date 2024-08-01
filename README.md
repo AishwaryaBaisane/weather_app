@@ -18,8 +18,7 @@ WeatherApp is a modern, user-friendly weather application that provides real-tim
   <img src="https://github.com/user-attachments/assets/e2bcf26f-5fe1-461e-abd1-3b453ce660f2" height = 20% width =25%>
 </p>
 
-<div>
-  <vedio>
-    
-  </vedio>
+
+<div align="center">
+<video height="550" src=""/>
 </div>
