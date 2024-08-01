@@ -6,7 +6,9 @@ WeatherApp is a modern, user-friendly weather application that provides real-tim
 🌦️ Real-Time Weather Data: Get the latest weather updates including temperature, humidity, wind speed, and precipitation.
 
 🕒 Hourly and Daily Forecasts: Access detailed forecasts for the next 24 hours and upcoming days.
+
 🌍 Multiple Locations: Add and manage multiple locations to easily switch between different cities or regions.
+
 📍 Geolocation Support: Automatically fetch weather information for your current location.
 
 <p>
