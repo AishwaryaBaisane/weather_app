@@ -11,6 +11,16 @@ WeatherApp is a modern, user-friendly weather application that provides real-tim
 
 📍 Geolocation Support: Automatically fetch weather information for your current location.
 
+## Package:-
+
+provider: A state management solution for managing application state.
+
+http: A package for making HTTP requests to fetch weather data from the API.
+
+shared_preferences: A package for storing and retrieving user preferences and favorite locations locally.
+
+## ScreenShort:
+
 <p>
   <img src="" height = 20% width 25%>
   <img src="https://github.com/user-attachments/assets/9a88fe30-e310-4789-82ad-8ad4397d9b26" height = 20% width =25%>
