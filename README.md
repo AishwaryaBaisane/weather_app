@@ -23,7 +23,8 @@ shared_preferences: A package for storing and retrieving user preferences and fa
 
 <p>
   <img src="https://github.com/user-attachments/assets/9a88fe30-e310-4789-82ad-8ad4397d9b26" height = 20% width =25%>
-  <img src="https://github.com/user-attachments/assets/7c239e13-ffab-4f13-8ac3-2079dfad19ca" height = 20% width =25%>
+  <img src="https://github.com/user-attachments/assets/02eff19d-a335-47ab-a03f-14f21687b9b2" height = 20% width =25%>
+  <img src="https://github.com/user-attachments/assets/3897b0f6-9f97-4520-bc41-82846e948af8" height = 20% width =25%>
   <img src="https://github.com/user-attachments/assets/e2bcf26f-5fe1-461e-abd1-3b453ce660f2" height = 20% width =25%>
 </p>
 
