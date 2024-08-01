@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/Provider/Weather_provider.dart';
 import 'package:weather_app/View/Fav_Screen.dart';
+import 'package:weather_app/View/ListPage.dart';
 import 'package:weather_app/View/WeatherPage.dart';
+import 'package:weather_app/View/splash_page.dart';
 
 void main()
 {
@@ -20,7 +22,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes:
         {
-          '/': (context)=>WeatherPage(),
+          '/': (context)=>SplashPage(),
+          '/first': (context)=>FirstScreen(),
+          '/weather':(context)=> WeatherPage(),
           '/fav': (context)=>FavScreen(),
         },
       ),
