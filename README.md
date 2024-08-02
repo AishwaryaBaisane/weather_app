@@ -19,11 +19,12 @@ http: A package for making HTTP requests to fetch weather data from the API.
 
 shared_preferences: A package for storing and retrieving user preferences and favorite locations locally.
 
+
 ## ScreenShort:
 
 <p>
   <img src="https://github.com/user-attachments/assets/9a88fe30-e310-4789-82ad-8ad4397d9b26" height = 20% width =25%>
-  <img src="https://github.com/user-attachments/assets/02eff19d-a335-47ab-a03f-14f21687b9b2" height = 20% width =25%>
+  <img src="https://github.com/user-attachments/assets/00887b53-a2c7-4ea3-b359-2e3b9eec5b5b" height = 20% width =25%>
   <img src="https://github.com/user-attachments/assets/e2bcf26f-5fe1-461e-abd1-3b453ce660f2" height = 20% width =25%>
 </p>
 
