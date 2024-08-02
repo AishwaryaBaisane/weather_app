@@ -29,5 +29,5 @@ shared_preferences: A package for storing and retrieving user preferences and fa
 
 
 <div align="center">
-<video height="550" src="https://github.com/user-attachments/assets/f11bdbcc-6c4a-4e95-bae9-55250fa1787d"/>
+<video height="550" src="https://github.com/user-attachments/assets/7d9bb8f8-7106-496b-a99e-b510555206ab"/>
 </div>
